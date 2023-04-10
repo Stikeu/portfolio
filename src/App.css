@@ -1,38 +1,397 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+::-webkit-scrollbar {
+    width: 9px;
   }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0D1117;
+    color: #FFFFFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.text-gradient{
+    background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1{
+  font-size: 2.5em;
+}
+p{ 
+  color:#A3B3BC;
+  font-size: 22px;
+}
+/* ---NAVBAR--- */
+.active {
+    background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
+}
+.button_accueil{
+  background-color: #2190FF;
   color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 132.05px;
 }
 
-.App-link {
-  color: #61dafb;
+.button_accueil:hover {
+  background-color: #2190ff47;
+}
+.navbar {
+    position: fixed;
+    bottom: 1px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+}
+.navbar_container {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.navbar_style {
+    background-color: #1c2634;
+    height: 70px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.navbar_button{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.navbar_icones {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.navbar_icones svg {
+    height: 20px;
+    width: 20px;
+}
+/* ---ACCUEIL--- */
+.accueil_container {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.accueil_link{
+  display: flex;
+  justify-content: space-evenly;
+}
+.accueil_nomdescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+/* ---PRESENTATION--- */
+.presentation_container {
+    min-height: 50vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+/* ---SKILLS--- */
+.parcours_skills {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skills_container {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.skills_logoblock {
+    margin: 30px;
+    width: 90px;
+    height: 115px;
+  }
+  
+.back_title,
+.front_title {
+    margin-bottom: 30px;
+}
+.skills_logoblock p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.skills_img {
+    height: 60px;
+    width: 60px;
+}
+.skills_titre {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.skills_all_skills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.back_skills, .front_skills {
+    --parcour-ring-offset-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  --parcour-ring-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  --parcour-shadow: 0 0 #0000;
+
+  box-shadow: var(--parcour-ring-offset-shadow), var(--parcour-ring-shadow), var(--parcour-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #161B22;
+    margin: 10px;
+    border-radius: 5px;
+}
+.front_skills_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+}
+.front_first_line,
+.front_second_line {
+    display: flex;
+}
+.back_skills_img {
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo_large{
+  height: 60px;
+    width: 90px;
+}
+/* ---PARCOUR--- */
+
+.card_parcour {
+    --parcour-ring-offset-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  --parcour-ring-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  --parcour-shadow: 0 0 #0000;
+
+  box-shadow: var(--parcour-ring-offset-shadow), var(--parcour-ring-shadow), var(--parcour-shadow);
+    background-color: #161B22;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.card_parcour h3{
+  font-size: 22px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ---WORK--- */
+.work_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    min-height: 100vh;
+}
+.img_popup{
+  max-width: 100%;
+}
+
+.card {
+    width: 30%;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #161B22;
+    cursor: pointer;
+    height: 330px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card_content {
+    padding: 20px;
+}
+
+.card_content h3 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.card_content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+
+.popup_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour obscurcir l'arrière-plan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .popup_content {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #161B22;
+   
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
   }
+  
+  .popup_content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .popup_content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .group_button_popup{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .button_popup{
+    background-color: #2190FF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button_popup:hover{
+    background-color: #2190ff47;
+  }
+  
+/* ---CONTACT--- */
+.contact_card {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #0D1117;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  .contact_titre{
+    text-align: center;
+  }
+  .name_email_line{
+    display: flex;
+    justify-content: space-between;
+  }
+  .name_label, .email_label{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact_form{
+    display: flex;
+    flex-direction: column;
+ 
+  }
+  
+  .contact_container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+  
+  .label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #161B22;
+    color: white;
+  }
+  
+  .button_contact {
+    background-color: #2190FF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button_contact:hover {
+    background-color: #2190ff47;
+  }
+
+  .mail_send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.block_confirm{
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+}
+.mail_confirm{
+  font-size: 35px;
 }

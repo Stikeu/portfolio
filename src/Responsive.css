@@ -1,0 +1,40 @@
+@media screen and (max-width:860px) {
+    .card{
+        width: 40%;
+    }
+}
+@media screen and (max-width:768px) {
+    .img_popup{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width:730px) {
+    .parcours_skills{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:850px) {
+    .group_button_popup{
+        width: 50%;
+    }
+}
+@media screen and (max-width:660px) {
+    .card{
+        width: 100%;
+        
+    }
+    .card img{
+        height: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .group_button_popup{
+        width: auto;
+    }
+}
+@media screen and (max-width:375px) {
+    .card img{
+        height: 200px;
+    }
+}
