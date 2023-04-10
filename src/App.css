@@ -190,6 +190,7 @@ p{
 .back_skills_img {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .logo_large{
   height: 60px;
@@ -228,7 +229,7 @@ p{
 }
 
 .card {
-    width: 30%;
+    width: 31%;
     margin: 10px;
     border-radius: 5px;
     overflow: hidden;
@@ -299,6 +300,9 @@ p{
     width: 30%;
     display: flex;
     justify-content: space-between;
+  }
+  .finiPopup{
+    color: red;
   }
   .button_popup{
     background-color: #2190FF;

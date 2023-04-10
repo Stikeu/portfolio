@@ -3,7 +3,8 @@ import Projet1 from '../../ressources/images/projet/Projet1.png'
 import Projet2 from '../../ressources/images/projet/Projet2.png'
 import Projet3 from '../../ressources/images/projet/Projet3.png'
 import Projet4 from '../../ressources/images/projet/Projet4.png'
-
+import Projet5 from '../../ressources/images/projet/Projet5.png'
+import PortfolioV1 from '../../ressources/images/projet/PortfolioV1.png'
 const workItems = [
     {
         id: 1,
@@ -26,22 +27,32 @@ const workItems = [
         id: 3,
         title: 'Projet 3',
         description: 'Troisième Projet réaliser pendant ma formation OpenClassRoom',
-        descriptionPopUp: 'Projet comprenant du HTML, CSS ainsi que du JS le tout 100% responsive',
+        descriptionPopUp: 'Projet comprenant du HTML, CSS ainsi que du JS, le tout 100% responsive',
         image: Projet3,
         lien: "https://github.com/Stikeu/GameOn-website-FR"
     }, {
         id: 4,
         title: 'Projet 4',
         description: 'Quatrième Projet réaliser pendant ma formation OpenClassRoom',
-        descriptionPopUp: 'Projet comprenant du HTML, CSS ainsi que du JS le tout 100% responsive, accessib' +
+        descriptionPopUp: 'Projet comprenant du HTML, CSS ainsi que du JS, le tout 100% responsive, accessib' +
                 'le à tous (aria-label,tab-index,etc...) et un linter du nom de EsLint',
         image: Projet4,
         lien: "https://github.com/Stikeu/Front-End-Fisheye"
     }, {
         id: 5,
-        title: 'Projet 3',
-        description: 'Description du projet 3',
-        // image: imgphp,
+        title: 'Projet 5',
+        description: 'Cinquième Projet réaliser pendant ma formation OpenClassRoom',
+        descriptionPopUp:"Projet comprenant du HTML,CSS ainsi que du JS",
+        finiPopup:"Le site n'est pas finis, il est toujours en cours.",
+        image: Projet5,
+        lien: "https://github.com/Stikeu/Project-7"
+    }, {
+        id: 6,
+        title: 'Portfolio',
+        description: 'Première Version de mon Prtfolio',
+        descriptionPopUp:"Projet construit avec du ReactJS et du CSS, le tout 100% responsive",
+        image: PortfolioV1,
+        lien: "https://github.com/Stikeu/Project-7"
     }
 ];
 
@@ -88,6 +99,7 @@ export default function Work() {
                             <h3>{workItems[activePopup].title}</h3>
                             <p>{workItems[activePopup].description}</p>
                             <p>{workItems[activePopup].descriptionPopUp}</p>
+                            <p><span className='finiPopup'>{workItems[activePopup].finiPopup}</span></p>
                             <div className='group_button_popup'>
                                 <button className='button_popup' onClick={handleRedirectGit}>Lien vers le git</button>
                                 <button className='button_popup' onClick={handlePopupClose}>Fermer</button>
