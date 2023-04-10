@@ -19,17 +19,17 @@ export default function ContactForm() {
         <form className='contact_form' onSubmit={handleSubmit}>
           <div className='name_email_line'>
             <div className='name_label'>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">Nom</label>
           <input id="name" type="text" name="name" required/>
           <ValidationError prefix="Name" field="name" errors={state.errors}/>
           </div>
           <div className='email_label'>
-          <label htmlFor="email">Email Address</label>
+          <label htmlFor="email">Adresse Mail</label>
           <input id="email" type="email" name="email" required/>
           <ValidationError prefix="Email" field="email" errors={state.errors}/>
           </div>
           </div>
-          <label htmlFor="subject">Subject</label>
+          <label htmlFor="subject">Sujet</label>
           <input id="subject" type="text" name="subject"/>
           <ValidationError prefix="Subject" field="subject" errors={state.errors}/>
 
@@ -38,7 +38,7 @@ export default function ContactForm() {
           <ValidationError prefix="Message" field="message" errors={state.errors}/>
 
           <button className='button_contact' type="submit" disabled={state.submitting}>
-            Submit
+            Envoyer
           </button>
         </form>
         </div>
