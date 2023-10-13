@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d3c2d650.css",
+    "main.js": "/static/js/main.008744ad.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Projet1.png": "/static/media/Projet1.64cd3ebe526b7528597f.png",
+    "static/media/CV_Nicolas_Sckittekatte.pdf": "/static/media/CV_Nicolas_Sckittekatte.ebaa66450ac8f3823268.pdf",
+    "static/media/Projet3.png": "/static/media/Projet3.f9d0c4a3cc8e706dc2a7.png",
+    "static/media/Projet2.png": "/static/media/Projet2.0ce710166afdc7c9ea25.png",
+    "static/media/PortfolioV1.png": "/static/media/PortfolioV1.fea4f55087df4ff3f0e0.png",
+    "static/media/Projet4.png": "/static/media/Projet4.54d1b409634c1894b789.png",
+    "static/media/Projet5.png": "/static/media/Projet5.2fa4da90f246b19cc453.png",
+    "static/media/html.png": "/static/media/html.6a51f860301aa209652d.png",
+    "static/media/sql.png": "/static/media/sql.39734fbe5c970ac1171b.png",
+    "static/media/Js.png": "/static/media/Js.1d4b479bf958a86724a8.png",
+    "static/media/boot.png": "/static/media/boot.01a0b539eef445179de6.png",
+    "static/media/php.png": "/static/media/php.20fc8832e2d2c9672599.png",
+    "static/media/react.png": "/static/media/react.0c3a4b0a106216a39354.png",
+    "static/media/sass.png": "/static/media/sass.d5cda537af45f995877d.png",
+    "static/media/css.png": "/static/media/css.079d3f0daa34850f00a2.png",
+    "index.html": "/index.html",
+    "main.d3c2d650.css.map": "/static/css/main.d3c2d650.css.map",
+    "main.008744ad.js.map": "/static/js/main.008744ad.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3c2d650.css",
+    "static/js/main.008744ad.js"
+  ]
+}
