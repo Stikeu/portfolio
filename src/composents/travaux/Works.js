@@ -52,7 +52,7 @@ const workItems = [
         description: 'Première Version de mon Prtfolio',
         descriptionPopUp:"Projet construit avec du ReactJS et du CSS, le tout 100% responsive",
         image: PortfolioV1,
-        lien: "https://github.com/Stikeu/Project-7"
+        lien: "https://github.com/Stikeu/portfolio"
     }
 ];
 
